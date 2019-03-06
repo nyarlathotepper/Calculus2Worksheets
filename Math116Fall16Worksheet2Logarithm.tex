@@ -1,0 +1,202 @@
+\documentclass[12pt]{article}
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+
+\usepackage{fancyhdr}
+
+\usepackage{textcomp}
+
+\usepackage{xcolor}
+
+\usepackage[framemethod=tikz]{mdframed}
+
+\definecolor{cccolor}{rgb}{.67,.7,.67}
+
+\lhead{} 
+
+\rhead{}
+
+\chead{}
+
+\cfoot{\thepage}
+
+\pagestyle{fancyplain}
+
+\newcommand{\numb}[1]{\noindent{\bf #1)}} 
+
+\begin{document}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\lhead{}
+
+\chead{}
+
+\rhead{}
+
+\centerline{\bf Math 116 In-Class Worksheet: Logarithms}%Logjam
+
+\bigskip
+
+\noindent{\bf Directions:} This worksheet is meant to be completed in groups, but you may work at your own pace. No leaving until class is done!
+
+\bigskip
+
+Last class, we explored a differential equation whose solution (I claimed) was an exponential function. To get to this, we'll go through logarithms first since it displays the fundamental theorem of calculus in all its glory. 
+
+\bigskip
+
+\numb{1} a) State the Fundamental Theorem of Calculus. What kind of functions does it apply to? This is a bit of a trick question, since there is a complete answer but I don't expect you to know it! Give an incomplete answer in its stead if you don't know the complete answer. 
+
+
+\bigskip
+
+b) Use the Fundamental Theorem to find an antiderivative for the function $f(t)=t^{n}$ where $n$ is a real number. Does your solution hold for all values of $n$?
+
+\bigskip
+
+\bigskip
+
+c) Does the expression
+\[
+\int_1^x \frac 1 t \ dt 
+\]
+
+always make sense? Why or why not? 
+
+\bigskip
+
+d) According to the fundamental theorem, what is the derivative of $f(x)=\displaystyle\int^x_1 \frac 1 t \ dt$?
+
+\newpage
+
+\numb{2} Let's set $\ln(x)=\displaystyle\int_1^x\frac 1 t \ dt$. 
+
+\bigskip
+
+a) Why is $\ln(1)=0$?
+
+\bigskip
+
+
+b) Draw the graph of $1/t$ from $t=1$ to $t=2$. Which is bigger, $\ln(2)$ or $1/2$?
+
+\bigskip
+
+c) Repeat part b) from $t=1$ to $t=3$. Which is bigger, $\ln(3)$ or $1/3+1/2$?
+
+\bigskip
+
+d) Finally, repeat part b) from $t=1$ to $t=4$. Which is bigger, $\ln(4)$ or $1/4+1/3+1/2$?
+
+\bigskip
+
+e) Convince your group members (and more importantly, convince me) that there is a number $e$ with $1<e<4$ such that $\ln(e)=1$. You can happily use whatever technology you like.
+
+\bigskip
+
+f) Now the hard part: what fantastic theorem guarantees the existence of the number $e$ in part e) (I totally did not plan that)? Why does the theorem even apply?
+
+\newpage
+
+\numb{3} Assuming $\ln(x)=\displaystyle\int^x_1 \frac 1 t \ dt$, compute the following derivatives and integrals.
+
+\bigskip
+
+a) $\dfrac d {dx}(\ln(x^3\tan(x^4)))$ 
+
+\bigskip
+
+b)  $\displaystyle\int_0^{\sqrt{e-1}} \frac t {t^2+1} \ dt$
+
+\bigskip
+
+c) $\displaystyle\int \frac {\sin(t)\cos(t)}{1+\cos(t)} \ dt$
+
+\newpage
+
+\begin{mdframed}[outerlinecolor=black,outerlinewidth=2pt,linecolor=cccolor,middlelinewidth=3pt,roundcorner=10pt]
+  This work is licensed under a Creative Commons Attribution-Non Commercial 4.0 International License.
+  \begin{center}
+    \includegraphics[scale=.5]{CCImage.png}
+  \end{center}
+\end{mdframed}
+
+
+
+\end{document}
+
+
+
+
+
+\newpage
+
+\numb{4} This kind of problem gets asked at interviews for financial positions and (I know this for a fact) at apple. 
+
+\bigskip
+
+a) The Collector has a balancing scale and seven orbs that he can't open, one of which contains the Reality Gem (or Stone, if you must). He knows that the orb with the Reality Gem in it must be heavier than the other six, but he can't perceive it. He could weigh them two at a time, but unfortunately, he only has time for two weighings before Thanos busts in and steals all the orbs from him, and he can only carry one orb with him. 
+
+How does the Collector determine which orb contains the Reality Gem?
+
+\bigskip
+
+b) Now suppose the Collector knows either six of the orbs have Infinity Gems in them or only one does, but he doesn't know which. Can he figure out which case he is in with only two weighings, or is he doomed no matter what?
+
+\newpage
+
+\textbf{For Next Worksheet:}
+
+
+\bigskip
+
+
+
+\begin{itemize}
+
+\item \textbf{Read textbook:} Section 6.3$^*$
+
+\item \textbf{Read notes:} Derivatives of Inverse Functions; Logarithms and Exponentials Base $e$
+
+\bigskip
+
+{\footnotesize\texttt{http://www-personal.umd.umich.edu/\texttildelow adwiggin/TeachingFiles/CalcII/Notes/116\%201-12-12.pdf}}
+
+\bigskip
+
+\item \textbf{Watch} Patrick JMT:  Derivatives of Exponential Functions
+
+\bigskip
+
+\texttt{http://patrickjmt.com/derivatives-of-exponential-functions/}
+
+\bigskip
+
+Khan Academy
+
+\bigskip
+
+{\tiny{\texttt{https://www.khanacademy.org/math/integral-calculus/indefinite-integrals/modal/v/finding-constant-of-integration-exponential}}}
+
+\bigskip
+
+{\tiny{\texttt{https://www.khanacademy.org/math/differential-calculus/diff-common-func-dc/modal/v/exponential-functions-differentiation}}}
+
+\bigskip
+
+{\tiny{\texttt{https://www.khanacademy.org/math/differential-equations/first-order-differential-equations/modal/v/newtons-law-of-cooling}}}
+
+
+
+\bigskip
+
+{\tiny{\texttt{https://www.khanacademy.org/math/differential-equations/first-order-differential-equations/modal/v/applying-newtons-law-of-cooling-to-warm-oatmeal}}}
+
+
+
+\end{itemize}
+
+
